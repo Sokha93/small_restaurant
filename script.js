@@ -1,9 +1,9 @@
-const h1 = document.getElementById('h1'),
+const h1 = document.getElementById('h1-restaurant-name'),
       banner = document.getElementById('banner'),
-      button = document.getElementById('a'),
+      button = document.getElementById('book-oreder-list-link'),
       container = document.getElementById('container'),
       container2 = document.getElementById('container2'),
-      h2 = document.getElementById('h2')
+      h2 = document.getElementById('h2-restaurant')
 
       
 
@@ -12,7 +12,7 @@ const onScroll = (event) => {
     const scrollPosition = event.target.scrollingElement.scrollTop;
 
     if(scrollPosition > 150){
-        banner.style.backgroundSize = '150%';
+        banner.style.backgroundSize = '130%';
         h1.style.opacity = 0;
         h1.style.translate = '0 -10px';
         h1.style.scale = '0.1';
@@ -49,7 +49,6 @@ const onScroll = (event) => {
         container2.style.opacity = 0;
         container2.style.transform = 'translateX(100px)';
     }
-    console.log(scrollPosition)
 };
 
 document.addEventListener('scroll', onScroll);
