@@ -37,8 +37,8 @@ const onScroll = (event) => {
         button.style.translate = 0;
         button.style.scale = 1;
         container.style.opacity = 0;
-        container.style.scale = '0.6';
-        container.style.transform = 'translateX(-100px)'
+        container.style.scale = '.8';
+        container.style.transform = 'translateX(0)'
     }
     if(scrollPosition > 350){
         container2.style.scale = 1;

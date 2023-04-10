@@ -8,32 +8,8 @@ html{
 }
 
 body{
-    /* font-family: 'Gotham Pro ', sans-serif; */
     font-family: 'Play', sans-serif;
     background-color: darkslategray;
-}
-
-.header{
-    background-image: url('./image/metallic.jpg');
-    background-position: center;
-    background-size: 100%;
-    height: 60px;
-    width: 100%;
-}
-.header ul{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 100px;
-    letter-spacing: 1px;
-    color: #e5c039;
-    list-style-type: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-ul li{
-    cursor: pointer;
 }
 
 .banner, h1, #book-oreder-list-link, h2 { transition: 0.6s; }
@@ -63,13 +39,22 @@ h1, button, h2{ margin-bottom: 12px; }
     background-size: 100%;
 }
 
+main{
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.under-main-block{
+    width: 100%;
+}
+
 .navbar{
     width: 100%;
     height: 60px;
     background-image: url('./image/metallic.jpg');
-    margin-top: 22px;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .ul-list-navbar{
@@ -79,10 +64,20 @@ h1, button, h2{ margin-bottom: 12px; }
     align-items: center;
     padding: 0 100px;
     letter-spacing: 1px;
-    color: #e5c039;
+    color: #dec054;
     list-style-type: none;
     text-transform: uppercase;
     font-size: 16px;
+}
+
+.ul-list-navbar li{
+    cursor: pointer;
+    transition: .6s;
+    display: block;
+}
+
+.ul-list-navbar li:hover{
+    border-bottom: 1.5px solid red;
 }
 
 #book-oreder-list-link{
@@ -97,12 +92,9 @@ h1, button, h2{ margin-bottom: 12px; }
 .container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;   
-}
-.paragraph {
-    width: 220px;
 }
 
 .container {
@@ -111,17 +103,48 @@ h1, button, h2{ margin-bottom: 12px; }
     opacity: 0;
 }
 
+.section-about{
+    position: relative;
+}
+
+.container-about{
+    background-color: #121212;
+    background-image: url('.//image/about.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+    opacity: .6;
+}
+
+.text-about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    transition: 1s;
+}
+
+.header-about{
+    font-size: 42px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.paragraph-about{
+    width: 54%;
+    letter-spacing: .9px;
+    font-size: 15px;
+}
+
 @media(max-width: 599px){
-    .header ul{
-        display: none;
-    }
     #h1-restaurant-name { font-size: 20px;}
     #h2-restaurant{ font-size: 14px; }
     #book-oreder-list-link{ font-size: 10px; }
 }
 
 @media(max-width: 849px){
-    .header ul{
-        padding: 0 40px 0 40px;
-    }
 }
