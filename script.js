@@ -2,7 +2,8 @@ const h1 = document.getElementById('h1-restaurant-name'),
       banner = document.getElementById('banner'),
       button = document.getElementById('book-oreder-list-link'),
       container = document.getElementById('container'),
-      h2 = document.getElementById('h2-restaurant')
+      h2 = document.getElementById('h2-restaurant'),
+      hours = document.getElementById('hours')
 
       
 
@@ -37,6 +38,23 @@ const onScroll = (event) => {
         container.style.opacity = 0;
         container.style.scale = '.7';
     }
+    for(let i = 0; i < hours.length; i++){
+       document.addEventListener('click', () => {
+        console.log(i)
+       }) 
+    }
+
+    // if(scrollPosition > 600){
+    //     for(let i = 0; i < hours.length; i++){
+    //         [i].style.translate = 0;
+    //         [i].style.scale = 1;
+    //         [i].style.opacity = 1;
+    //     }
+    // }else {
+    //     hours.style.translate = '-120px 0';
+    //     hours.style.scale = '0.1';
+    //     hours.style.opacity = 0;
+    // }
 };
 
 document.addEventListener('scroll', onScroll);
